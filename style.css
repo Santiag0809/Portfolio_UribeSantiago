@@ -1,0 +1,229 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+}
+
+body {
+  background: #0b0d12;
+  color: #e8eef9;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+
+.contenedor.grandesete {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 32px;
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 28px;
+}
+
+@media (max-width: 920px) {
+  .contenedor.grandesete {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+.barraLateral {
+  position: sticky;
+  top: 24px;
+  align-self: start;
+  background: #121622;
+  border: 1px solid #23283a;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.perfil {
+  padding: 22px;
+}
+
+.imgPerfil {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 16px;
+  border: 2px solid rgba(255, 255, 255, .08);
+  display: block;
+}
+
+.nombre {
+  margin: 12px 0 4px;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.rol {
+  margin: 0 0 8px;
+  color: #7c5cff;
+  font-weight: 600;
+}
+
+.resumen {
+  margin: 0;
+  color: #a6adbb;
+}
+
+
+.seccíon,
+.seccion,
+.links,
+.skills,
+.refencias {
+  border-top: 1px solid #23283a;
+}
+
+.tituloSeccion {
+  margin: 0;
+  padding: 16px 22px;
+  color: #cfd8ff;
+  font-size: .9rem;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+}
+
+.lista {
+  list-style: none;
+  margin: 0;
+  padding: 0 22px 18px;
+  display: grid;
+  gap: 8px;
+}
+
+.link {
+  color: #8aceff;
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.nombreReferencia {
+  margin: 0;
+  font-weight: 600;
+}
+
+.referenciaRol {
+  margin: 2px 0;
+  color: #a6adbb;
+}
+
+
+.main {
+  display: grid;
+  gap: 24px;
+}
+
+.sobre.mi,
+.proyectos,
+.Educación,
+.lenguas,
+.elFooter {
+  background: rgba(18, 22, 34, .7);
+  border: 1px solid #23283a;
+  border-radius: 16px;
+  padding: 22px;
+}
+
+.sobre.mi h2,
+.proyectos h2,
+.Educación h2,
+.lenguas h2 {
+  margin: 0 0 10px;
+  font-size: 1.3rem;
+}
+
+.sobre.mi p,
+.proyectos p,
+.Educación p,
+.lenguas p {
+  margin: 0 0 10px;
+}
+
+
+.proyectosGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.proyectos .proyectos,
+.proyecto {
+  border: 1px solid #23283a;
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.proyectos .proyectos h3,
+.proyecto h3 {
+  margin: 0 0 6px;
+}
+
+.proyectitos {
+  color: #a6adbb;
+  font-size: .95rem;
+  margin: 6px 0 0;
+}
+
+
+.fecha {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.fecha>li {
+  margin: 0 0 14px;
+  padding-left: 14px;
+  position: relative;
+}
+
+.fecha>li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: .6em;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #7c5cff;
+}
+
+.tiempo {
+  color: #a6adbb;
+  margin: 4px 0 0;
+}
+
+.elFooter {
+  border-top: 1px dashed #23283a;
+  text-align: center;
+}
+
+.frase {
+  margin: 0;
+}
+
+.frase p {
+  margin: 0;
+}
+
+.frase cite {
+  display: block;
+  margin-top: 6px;
+  color: #a6adbb;
+}
+
+@media (max-width: 800px) {
+  .proyectosGrid {
+    grid-template-columns: 1fr;
+  }
+}
