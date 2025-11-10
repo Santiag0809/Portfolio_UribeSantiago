@@ -81,5 +81,3 @@ Mi formación académica:
 - Español (Nativo)  
 - Inglés (B1)
 
-### **✔ Frase motivacional**
-> “The best way to predict the fu
