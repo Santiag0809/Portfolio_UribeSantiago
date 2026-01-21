@@ -168,6 +168,17 @@ body {
   margin: 0 0 6px;
 }
 
+.proyectoLink {
+  text-decoration: none;
+  color: inherit;
+}
+
+.proyectoLink:hover .proyecto {
+  cursor: pointer;
+  transform: scale(1.03);
+  border-color: #4f46e5;
+}
+
 .proyectitos {
   color: #a6adbb;
   font-size: .95rem;
